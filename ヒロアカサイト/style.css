@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+:root{--black:#111217;--yellow:#ffe100;--blue:#0877d1;--pale:#f4f4f1;--white:#fff;--red:#ef5b3c;--line:#d8d8d3}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'Noto Sans JP',sans-serif;background:var(--pale);color:var(--black);line-height:1.7}a{text-decoration:none;color:inherit}.topbar{position:fixed;z-index:100;top:0;left:0;right:0;height:76px;background:#fff;border-bottom:3px solid var(--black);display:flex;align-items:center;padding:0 42px 0 92px;justify-content:space-between}.brand{display:flex;flex-direction:column;font-family:'Bebas Neue',sans-serif;line-height:.75;letter-spacing:1px}.brand strong{font-size:25px}.brand span{font-size:15px;color:var(--blue);letter-spacing:4px}.desktop-nav{display:flex;height:100%;align-items:center}.desktop-nav a{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:1.5px;padding:28px 19px;border-left:1px solid var(--line);position:relative}.desktop-nav a:last-child{border-right:1px solid var(--line)}.desktop-nav a:after{content:'';position:absolute;bottom:0;left:0;width:100%;height:5px;background:var(--yellow);transform:scaleX(0);transform-origin:left;transition:.2s}.desktop-nav a:hover:after{transform:scaleX(1)}.menu-toggle{display:none;background:var(--yellow);border:3px solid var(--black);font-size:22px;width:45px;height:42px}.side-nav{position:fixed;z-index:110;left:0;top:0;bottom:0;width:68px;background:var(--black);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px}.side-mark{font-family:'Bebas Neue',sans-serif;font-size:17px;line-height:.9;text-align:center;color:var(--yellow);writing-mode:vertical-rl;transform:rotate(180deg)}.side-line{height:120px;width:2px;background:var(--yellow)}.side-nav>span{font-size:7px;writing-mode:vertical-rl;letter-spacing:2px;color:#aaa}.hero{margin-left:68px;padding-top:76px;height:100vh;min-height:680px;position:relative;overflow:hidden;background:var(--black)}.hero-media,.hero-slide,.hero-shade{position:absolute;inset:0;width:100%;height:100%}.hero-slide{object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity .7s,transform 7s}.hero-slide.active{opacity:1;transform:scale(1)}.hero-shade{background:linear-gradient(90deg,rgba(8,9,13,.92) 0%,rgba(8,9,13,.45) 43%,rgba(8,9,13,.15) 75%),linear-gradient(0deg,rgba(8,9,13,.72),transparent 40%)}.slash{position:absolute;z-index:2;top:-20%;width:14px;height:150%;background:var(--yellow);transform:skew(-16deg) rotate(10deg);opacity:.9}.slash-a{right:24%}.slash-b{right:19%;width:4px;background:#fff}.hero-copy{position:absolute;z-index:5;left:7%;top:51%;transform:translateY(-45%);color:#fff}.eyebrow{display:inline-block;background:var(--yellow);color:var(--black);font-weight:900;padding:3px 10px;font-size:12px;letter-spacing:2px}.hero h1{font-size:clamp(58px,8.5vw,125px);line-height:.86;margin:20px 0;font-weight:900;letter-spacing:-3px;text-shadow:6px 6px 0 rgba(0,0,0,.35)}.hero h1 em{font-style:normal;color:var(--yellow)}.hero-sub{font-size:17px;font-weight:700;margin-bottom:22px}.yellow-btn{display:inline-flex;align-items:center;gap:30px;background:var(--yellow);border:3px solid var(--black);color:var(--black);font-weight:900;padding:11px 18px;box-shadow:6px 6px 0 #fff;transition:.2s}.yellow-btn:hover{transform:translate(3px,3px);box-shadow:3px 3px 0 #fff}.hero-caption{position:absolute;z-index:5;left:7%;bottom:34px;color:#fff;display:flex;gap:18px;align-items:center;font-size:10px;letter-spacing:2px}.hero-caption b{font-family:'Bebas Neue';font-size:26px;letter-spacing:1px}.hero-caption span{border-left:1px solid #fff;padding-left:18px}.hero-dots{position:absolute;z-index:5;right:35px;bottom:28px;display:flex}.hero-dots button{border:0;border-left:1px solid rgba(255,255,255,.5);background:rgba(0,0,0,.45);color:#fff;padding:8px 12px;font-family:'Bebas Neue';font-size:16px;cursor:pointer}.hero-dots button.active{background:var(--yellow);color:var(--black)}.section-white{padding:100px 9vw 105px;background:#fff;margin-left:68px}.section-blue{padding:105px 9vw;margin-left:68px;background:var(--blue);color:#fff;position:relative;overflow:hidden}.section-yellow{padding:105px 9vw;margin-left:68px;background:var(--yellow)}.section-label{display:flex;align-items:center;gap:13px;font-family:'Bebas Neue';letter-spacing:2px;font-size:16px;border-bottom:2px solid var(--black);padding-bottom:10px}.section-label span{background:var(--black);color:#fff;padding:3px 8px;font-size:13px}.section-label.light{border-color:rgba(255,255,255,.45)}.section-label.light span{background:var(--yellow);color:var(--black)}.section-title{display:flex;justify-content:space-between;align-items:end;margin:40px 0 28px}.section-title h2{font-size:clamp(42px,6vw,76px);line-height:1;font-weight:900}.section-title p{font-size:13px;font-weight:700}.news-list{border-top:4px solid var(--black)}.news-list article{display:grid;grid-template-columns:110px 1fr 40px;align-items:center;gap:25px;padding:22px 10px;border-bottom:1px solid var(--line)}.news-list time{font-family:'Bebas Neue';color:var(--blue);font-size:18px}.news-list h3{font-size:19px}.news-list p{font-size:12px;color:#666}.news-list article>span{font-size:24px}.intro:before{content:'U.A.';position:absolute;right:-40px;bottom:-110px;font-family:'Bebas Neue';font-size:400px;color:rgba(255,255,255,.08)}.intro-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;margin-top:55px;position:relative}.mini-title{font-family:'Bebas Neue';letter-spacing:3px;color:var(--yellow);font-size:17px}.intro h2{font-size:clamp(45px,6vw,82px);line-height:1.05;margin-top:12px}.intro h2 strong{color:var(--yellow)}.intro-text{font-size:15px;max-width:560px}.intro-text p+p{margin-top:20px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.35);margin-top:65px;position:relative}.stats div{padding:25px;background:rgba(0,0,0,.1)}.stats b{font-family:'Bebas Neue';font-size:45px;color:var(--yellow);display:block}.stats span{font-family:'Bebas Neue';letter-spacing:2px;display:block}.stats strong{font-size:16px}.season-row{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.season-item{height:570px;position:relative;overflow:hidden;background:#111;border:3px solid var(--black)}.season-item img{width:100%;height:100%;object-fit:cover;transition:.5s}.season-item:hover img{transform:scale(1.06)}.season-item:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.92),transparent 55%)}.season-no{position:absolute;z-index:3;top:10px;left:15px;background:var(--yellow);padding:5px 10px;font-family:'Bebas Neue';font-size:22px}.season-overlay{position:absolute;z-index:3;bottom:25px;left:24px;right:20px;color:#fff}.season-overlay small{font-family:'Bebas Neue';color:var(--yellow);letter-spacing:2px}.season-overlay h3{font-size:32px;margin:6px 0}.season-overlay p{font-size:12px}.characters{margin-left:68px;position:relative;background:#0b1220;overflow:hidden}.ua-bg{position:absolute;inset:0;background:linear-gradient(rgba(4,16,35,.78),rgba(4,16,35,.94)),url('images/ua-high.jpg') center/cover fixed}.character-inner{position:relative;padding:105px 9vw}.character-heading{display:flex;justify-content:space-between;align-items:end;color:#fff;margin:45px 0 30px}.character-heading p:first-child{color:var(--yellow);font-family:'Bebas Neue';letter-spacing:3px}.character-heading h2{font-size:clamp(55px,7vw,92px);line-height:.86}.character-heading h2 em{color:var(--yellow);font-style:normal}.character-heading>p{max-width:300px;font-size:13px}.character-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.character-card{background:#fff;color:var(--black);display:grid;grid-template-columns:170px 1fr;min-height:235px;border:3px solid var(--black);position:relative;overflow:hidden}.character-card:before{content:'';position:absolute;top:0;right:0;border-style:solid;border-width:0 55px 55px 0;border-color:transparent var(--yellow) transparent transparent;z-index:2}.character-card img{width:100%;height:100%;min-height:235px;object-fit:cover}.character-card>div{padding:22px}.character-card small{font-family:'Bebas Neue';color:var(--blue);letter-spacing:2px}.character-card h3{font-size:27px;margin:3px 0 8px}.character-card p{font-size:12px;line-height:1.8}.accent-orange{box-shadow:8px 8px 0 var(--red)}.accent-blue{box-shadow:8px 8px 0 var(--blue)}.highlights{min-height:500px}.highlight-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;margin-top:50px}.highlight-layout>h2{font-family:'Bebas Neue';font-size:clamp(90px,12vw,170px);line-height:.72}.highlight-layout>h2 em{font-style:normal;-webkit-text-stroke:2px var(--black);color:transparent}.highlight-layout article{border-top:3px solid var(--black);padding:22px 0}.highlight-layout article:last-child{border-bottom:3px solid var(--black)}.highlight-layout article b{font-family:'Bebas Neue';font-size:38px}.highlight-layout h3{font-size:22px}.highlight-layout p{font-size:13px;max-width:600px}footer{margin-left:68px;background:var(--black);color:#fff;padding:35px 9vw;display:flex;align-items:center;justify-content:space-between}footer .brand strong{color:#fff}footer .brand span{color:var(--yellow)}footer p{font-size:10px;color:#aaa;letter-spacing:1px}footer>a{color:var(--yellow);font-family:'Bebas Neue';letter-spacing:2px}
+@media(max-width:1050px){.desktop-nav{display:none}.menu-toggle{display:block}.topbar{padding-left:88px}.season-row{grid-template-columns:1fr}.season-item{height:520px}.character-grid{grid-template-columns:1fr}.intro-layout,.highlight-layout{grid-template-columns:1fr;gap:35px}}
+@media(max-width:700px){.side-nav{display:none}.topbar{padding:0 18px}.hero,.section-white,.section-blue,.section-yellow,.characters,footer{margin-left:0}.hero{padding-top:76px}.hero-copy{left:7%;right:5%}.hero h1{font-size:62px}.hero-caption{left:7%;bottom:25px}.hero-dots{right:12px;bottom:18px}.section-white,.section-blue,.section-yellow,.character-inner{padding-left:7%;padding-right:7%}.section-title{display:block}.section-title p{margin-top:14px}.stats{grid-template-columns:1fr}.character-card{grid-template-columns:120px 1fr}.character-card img{min-height:220px}.character-card>div{padding:16px}.character-card h3{font-size:21px}.news-list article{grid-template-columns:70px 1fr 20px;gap:12px}.news-list h3{font-size:15px}.news-list p{font-size:11px}footer{display:block}footer p{margin:18px 0}}
+@media(max-width:480px){.character-card{grid-template-columns:1fr}.character-card img{height:220px}.hero h1{font-size:55px}.hero-sub{font-size:14px}.yellow-btn{box-shadow:4px 4px 0 #fff}.season-item{height:480px}}
+
+/* 10th anniversary */
+.anniversary{
+  position:relative;
+  overflow:hidden;
+  background:#111;
+  color:#fff;
+  border-top:8px solid #ffd400;
+  padding:90px 7vw;
+}
+.anniversary::before{
+  content:"10";
+  position:absolute;
+  left:-30px;
+  bottom:-110px;
+  font-size:clamp(220px,32vw,520px);
+  line-height:1;
+  font-weight:1000;
+  color:#ffd400;
+  opacity:.08;
+  font-style:italic;
+  pointer-events:none;
+}
+.anniversary-inner{
+  position:relative;
+  z-index:1;
+  max-width:1400px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1fr 1.05fr;
+  gap:55px;
+  align-items:center;
+}
+.anniversary-copy{padding-left:10px}
+.anniversary-kicker{
+  margin:0 0 12px;
+  color:#ffd400;
+  font-weight:900;
+  letter-spacing:.16em;
+  font-size:14px;
+}
+.anniversary h2{
+  margin:0;
+  font-size:clamp(48px,7vw,100px);
+  line-height:.95;
+  font-weight:1000;
+  letter-spacing:-.04em;
+  font-style:italic;
+}
+.anniversary-message{
+  max-width:600px;
+  margin:28px 0 0;
+  font-size:clamp(20px,2.2vw,34px);
+  line-height:1.5;
+  font-weight:900;
+}
+.anniversary-line{
+  width:150px;
+  height:8px;
+  background:#ffd400;
+  transform:skewX(-25deg);
+  margin:30px 0 18px;
+}
+.anniversary-sub{
+  margin:0;
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:.2em;
+  color:#aaa;
+}
+.anniversary-image-wrap{
+  position:relative;
+  background:#ffd400;
+  padding:8px;
+  transform:rotate(1.2deg);
+  box-shadow:18px 18px 0 rgba(255,212,0,.15);
+}
+.anniversary-image-wrap::after{
+  content:"10TH";
+  position:absolute;
+  right:-20px;
+  top:-24px;
+  background:#111;
+  color:#ffd400;
+  border:4px solid #ffd400;
+  padding:8px 14px;
+  font-size:20px;
+  font-weight:1000;
+  transform:rotate(5deg);
+}
+.anniversary-image-wrap img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+@media(max-width:800px){
+  .anniversary{padding:65px 22px}
+  .anniversary-inner{grid-template-columns:1fr;gap:35px}
+  .anniversary-copy{padding-left:0}
+  .anniversary-message{font-size:21px}
+  .anniversary-image-wrap{transform:none}
+  .anniversary-image-wrap::after{right:8px;top:8px}
+}
